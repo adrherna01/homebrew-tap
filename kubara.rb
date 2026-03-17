@@ -5,21 +5,21 @@
 class Kubara < Formula
   desc "Kubara CLI tool for managing my Go binaries"
   homepage "https://github.com/adrherna01/kubara"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/adrherna01/kubara/releases/download/v0.1.2/kubara_0.1.2_darwin_amd64.tar.gz"
-      sha256 "cbb4e6daa352cd058552e198500f0380a33b5dd8707ed03fc435b4a9319368f8"
+      url "https://github.com/adrherna01/kubara/releases/download/v0.1.3/kubara_0.1.3_darwin_amd64.tar.gz"
+      sha256 "601e5eb5c3492a62f47a22367892dd88477503055eaef7eb5d983590656f45f4"
 
       define_method(:install) do
         bin.install "kubara"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/adrherna01/kubara/releases/download/v0.1.2/kubara_0.1.2_darwin_arm64.tar.gz"
-      sha256 "6d1c15e3acc54c956130a4f3aff821994d3b6bfffe813e75db2b9962ae32bda5"
+      url "https://github.com/adrherna01/kubara/releases/download/v0.1.3/kubara_0.1.3_darwin_arm64.tar.gz"
+      sha256 "dfe57af745714d7f68a9a956256c3263da0edc07cac74845c66173969c6e57e1"
 
       define_method(:install) do
         bin.install "kubara"
@@ -29,15 +29,15 @@ class Kubara < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adrherna01/kubara/releases/download/v0.1.2/kubara_0.1.2_linux_amd64.tar.gz"
-      sha256 "ce9393e9e46da743c1060100e82fa3d4cc01bd7f26a78783f11a9b7b6f704dde"
+      url "https://github.com/adrherna01/kubara/releases/download/v0.1.3/kubara_0.1.3_linux_amd64.tar.gz"
+      sha256 "b212875a57ead7db276ac93ad1aa7a22fc0087c46bafaa1fe42b688184817c7b"
       define_method(:install) do
         bin.install "kubara"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adrherna01/kubara/releases/download/v0.1.2/kubara_0.1.2_linux_arm64.tar.gz"
-      sha256 "7d4546537e50ef2eceeb66f0dd49a90ebec8865fecdb5126d5488b04249f58a1"
+      url "https://github.com/adrherna01/kubara/releases/download/v0.1.3/kubara_0.1.3_linux_arm64.tar.gz"
+      sha256 "ca9950412a5e6612be30d02f69085b9e346bbfc85bbe8244f769ace931239ee7"
       define_method(:install) do
         bin.install "kubara"
       end
