@@ -11,7 +11,7 @@ class Kubara < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/adrherna01/kubara/releases/download/v0.1.5/kubara_0.1.5_darwin_amd64.tar.gz"
-      sha256 "058b6a9aafc5d2c7c981dd2a7586b5fbcb752125a6eb909a3ee4b30ac5519faa"
+      sha256 "fd822977b5d147dcbf4e32dccbcca9077960eef0f3d0200f65c836de8fc82efe"
 
       define_method(:install) do
         bin.install "kubara"
@@ -19,7 +19,7 @@ class Kubara < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/adrherna01/kubara/releases/download/v0.1.5/kubara_0.1.5_darwin_arm64.tar.gz"
-      sha256 "456ca71712e6a20b43ea414f64f2e334d1aa2c3cbece0d15e15d9c8a658723fb"
+      sha256 "bc9ebb7b00fc16bc44c24d67174a112852d45ac627156450112d793839d6ae2b"
 
       define_method(:install) do
         bin.install "kubara"
@@ -30,14 +30,14 @@ class Kubara < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/adrherna01/kubara/releases/download/v0.1.5/kubara_0.1.5_linux_amd64.tar.gz"
-      sha256 "8afbc22f9f4ef5e5b570073ffbfdc74962f5dcbe207c3d36acac2b5ccacb9745"
+      sha256 "1e0c398e6ed782ce5e1557af99674dc1a9d91a28b02f65fb00754dfd6f6653a3"
       define_method(:install) do
         bin.install "kubara"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/adrherna01/kubara/releases/download/v0.1.5/kubara_0.1.5_linux_arm64.tar.gz"
-      sha256 "f7112b797e91f16fd23f9a82ae7f588084768d12840bfe99b48cd700a26048aa"
+      sha256 "6f7c9d8d8a348e1372a075ab4b6b8afe58935010103a0b532fd0a8760bebb23b"
       define_method(:install) do
         bin.install "kubara"
       end
